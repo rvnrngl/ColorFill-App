@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90000000">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_exit"
+            android:layout_gravity="right"
+            android:id="@+id/img_btn_exit"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="15dp"
+            android:scrollbars="none"
+            android:overScrollMode="never">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/info_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="What is ColorFill?"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/info_des"
+                    android:layout_below="@+id/info_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:justificationMode="inter_word"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:text="  ColorFill lets the user simulate the vision of someone with a colorblindness. Users can also try our two colorblind test that determine if the user has colorblindness."/>
+
+                <TextView
+                    android:id="@+id/tut_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/info_des"
+                    android:text="Simulate Vision"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tut_des"
+                    android:layout_below="@+id/tut_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:justificationMode="inter_word"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:text="        Can simulate different types of color blindness:"/>
+
+                <TextView
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ana_types"
+                    android:layout_below="@+id/tut_des"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:justificationMode="inter_word"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:text="Anomalous Trichromacy"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ana_deu"
+                    android:layout_below="@+id/ana_types"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="60dp"
+                    android:justificationMode="inter_word"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:text="\u25CF Deuteranomaly"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ana_pro"
+                    android:layout_below="@+id/ana_deu"
+                    android:paddingLeft="60dp"
+                    android:justificationMode="inter_word"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:text="\u25CF Protanomaly"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ana_tri"
+                    android:layout_below="@+id/ana_pro"
+                    android:paddingLeft="60dp"
+                    android:justificationMode="inter_word"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:text="\u25CF Tritanomaly"/>
+
+                <TextView
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/di_types"
+                    android:layout_below="@+id/ana_tri"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:justificationMode="inter_word"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:text="Dichromacy"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/di_deu"
+                    android:layout_below="@+id/di_types"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="60dp"
+                    android:justificationMode="inter_word"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:text="\u25CF Deuteranopia"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/di_pro"
+                    android:layout_below="@+id/di_deu"
+                    android:paddingLeft="60dp"
+                    android:justificationMode="inter_word"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:text="\u25CF Protanopia"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/di_tri"
+                    android:layout_below="@+id/di_pro"
+                    android:paddingLeft="60dp"
+                    android:justificationMode="inter_word"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:text="\u25CF Tritanopia"/>
+
+                <TextView
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mono_types"
+                    android:layout_below="@+id/di_tri"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:justificationMode="inter_word"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:text="Monochromacy"/>
+
+                <TextView
+                    android:id="@+id/test_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/mono_types"
+                    android:layout_marginTop="5dp"
+                    android:text="Test Your Eye"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/test_des"
+                    android:layout_below="@+id/test_color"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:justificationMode="inter_word"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:text="      Choose between our two colorblind test to check your vision:"/>
+
+                <TextView
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/test_1"
+                    android:layout_below="@+id/test_des"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:justificationMode="inter_word"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:text="\u2022 Ishihara Test"/>
+
+                <TextView
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/test_1des"
+                    android:layout_below="@+id/test_1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:justificationMode="inter_word"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:text="      Is a colorblind test that based on Dr. Shinobu Ishihara's Color Test to detect if the user has colorblind vision. The test consists of a number of Ishihara plates corresponds to the colorblind types."/>
+
+                <TextView
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/test_2"
+                    android:layout_below="@+id/test_1des"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:justificationMode="inter_word"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:text="\u2022 Tap The Different Color"/>
+
+                <TextView
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/test_2des"
+                    android:layout_below="@+id/test_2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:justificationMode="inter_word"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:text="      A color vision game that test the user ability to see the difference between colors. The game lets the user tap the different color among the displayed color."/>
+
+                <TextView
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/test_2des"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    android:textColor="#80505051"
+                    android:text="\ColorFill developed by Ringel et al., 2023"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image_display"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/image_temp"
+        android:layout_centerHorizontal="true"
+        android:background="#000000"
+        android:padding="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/title_Textview"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textColor="#90FFFFFF"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_Textview"
+        android:layout_marginTop="2dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/description_Textview"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        android:textColor="#90FFFFFF"/>
+
+    <HorizontalScrollView
+        android:id="@+id/img_scroll"
+        android:layout_above="@+id/cam_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="none"
+        android:requiresFadingEdge="horizontal"
+        android:fadingEdgeLength="220dp"
+        android:background="#B3000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#00000000"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="150dp"
+                android:id="@+id/bg_normal"
+                android:orientation="vertical">
+                <!--Normal Image effect-->
+                <ImageView
+                    android:id="@+id/img_normal"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/image_sample"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Normal"
+                    android:textSize="13sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:id="@+id/bg_deuteranomaly"
+                android:orientation="vertical">
+                <!--Deuteranomaly effect-->
+                <ImageView
+                    android:id="@+id/img_deuteranomaly"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/deteranomaly_logo"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Deuteranomaly"
+                    android:textSize="13sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:id="@+id/bg_protanomaly"
+                android:orientation="vertical">
+                <!--Protanomaly effect-->
+                <ImageView
+                    android:id="@+id/img_protanomaly"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/protanomaly_logo"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Protanomaly"
+                    android:textSize="13sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:id="@+id/bg_tritanomaly"
+                android:orientation="vertical">
+                <!--Tritanomaly effect-->
+                <ImageView
+                    android:id="@+id/img_tritanomaly"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/tritanomaly_logo"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Tritanomaly"
+                    android:textSize="13sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:id="@+id/bg_deuteranopia"
+                android:orientation="vertical">
+                <!--Deuteranopia Image effect-->
+                <ImageView
+                    android:id="@+id/img_deuteranopia"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/deuteranopia_logo"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Deuteranopia"
+                    android:textSize="13sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:id="@+id/bg_protanopia"
+                android:orientation="vertical">
+                <!--Protanopia Image effect-->
+                <ImageView
+                    android:id="@+id/img_protanopia"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/protanopia_logo"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Protanopia"
+                    android:textSize="13sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:id="@+id/bg_tritanopia"
+                android:orientation="vertical">
+                <!--Tritanopia Image effect-->
+                <ImageView
+                    android:id="@+id/img_tritanopia"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/tritanopia_logo"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Tritanopia"
+                    android:textSize="13sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="150dp"
+                android:id="@+id/bg_monochromacy"
+                android:orientation="vertical">
+                <!--Monochromacy Image effect-->
+                <ImageView
+                    android:id="@+id/img_monochromacy"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/monochromacy_logo"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Monochromacy"
+                    android:textSize="13sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/cam_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_save"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_Camera"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_camera_white"
+            android:paddingLeft="80dp"
+            android:background="@drawable/button_border"
+            android:textColor="#BFFFFFFF"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/btn_Camera"
+            android:drawableLeft="@drawable/ic_gallery_white"
+            android:paddingHorizontal="80dp"
+            android:background="@drawable/button_border"
+            android:textSize="20sp"
+            android:textColor="#BFFFFFFF"
+            android:id="@+id/btn_gallery" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_border"
+        android:text="Save"
+        android:textColor="#BFFFFFFF"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

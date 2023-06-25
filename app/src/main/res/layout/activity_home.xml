@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/homeView"
+    android:background="@drawable/bg_home"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:id="@+id/logoTitle"
+        android:src="@drawable/logo_colorfill"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btn_Simulate"
+        android:textSize="17sp"
+        android:layout_marginBottom="25dp"
+        android:text="Color Blind App"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Simulate"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/logoTitle"
+        android:background="@drawable/custom_button"
+        android:text="Simulate"
+        android:textColor="#BFFFFFFF"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_Simulate"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:text="Eye Test"
+        android:textSize="18sp"
+        android:textColor="#BFFFFFFF"
+        android:id="@+id/btn_EyeTest"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showTutorial"
+        android:layout_below="@+id/btn_EyeTest"
+        android:text="About us?"
+        android:textColor="@color/text_color"
+        android:textStyle="italic"
+        android:textSize="12sp"
+        android:layout_marginTop="7dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

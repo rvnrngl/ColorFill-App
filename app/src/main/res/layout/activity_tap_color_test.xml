@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TapColorTestActivity">
+
+    <TextView
+        android:id="@+id/Taptitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap the different color"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/txtlvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LEVEL"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/Taptitle"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/txtTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textColor="@color/black"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/txtlvl"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/lvlContainer"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtTimer"
+        android:orientation="vertical">
+
+        <!--Level 1 to 5 layout start -->
+        <LinearLayout
+            android:id="@+id/Container_2x2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l1_shape1"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_container"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l1_shape2"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_container"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l1_shape3"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_container"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l1_shape4"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_container"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--Level 1 to 5 layout end -->
+
+        <!--Level 6 to 10 layout start -->
+        <LinearLayout
+            android:id="@+id/Container_3x3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l2_shape1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_container"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l2_shape2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_container"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l2_shape3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_container"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l2_shape4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_container"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l2_shape5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_container"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l2_shape6"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_container"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l2_shape7"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_container"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l2_shape8"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_container"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l2_shape9"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_container"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--Level 6 to 10 layout end -->
+
+        <!--Level 11 to 15 layout start -->
+        <LinearLayout
+            android:id="@+id/Container_4x4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l3_shape1"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_container"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l3_shape2"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_container"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l3_shape3"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_container"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l3_shape4"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_container"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l3_shape5"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_container"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l3_shape6"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_container"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l3_shape7"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_container"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l3_shape8"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_container"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l3_shape9"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_container"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l3_shape10"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_container"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l3_shape11"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_container"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l3_shape12"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_container"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l3_shape13"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_container"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l3_shape14"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_container"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l3_shape15"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_container"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/l3_shape16"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_container"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--Level 11 to 15 layout end -->
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvlContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/txtScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tapColorProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tapColorBackBtn"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custom_button"
+        android:text="Back"
+        android:textColor="#BFFFFFFF"
+        android:textSize="18sp" />
+
+</RelativeLayout>
