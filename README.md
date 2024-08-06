@@ -1,4 +1,7 @@
-# Color Fill - Android App
+<div style="float: left; margin-right: 15px;">
+  <img src="https://github.com/rvnrngl/ColorFill-App/blob/master/app/src/main/ic_colorfill-playstore.png" alt="ColorFill Icon" height="75" />
+  <h1>Color Fill - Android App</h1>
+</div>
 
 This is a thesis project that I developed to simulate various types of colorblindness and provide tests to help identify color vision deficiencies.
 
