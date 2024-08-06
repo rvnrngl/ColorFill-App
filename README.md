@@ -37,7 +37,7 @@ The app includes the following tests:
   - **OpenCV**: Library used for computer vision tasks.
   - **Fillow**: Library used for color-related calculations.
   - **NumPy**: Library used for numerical operations.
-  - **Dalonization Algorithm**: Algorithm used for colorblindness simulation.
+  - **Daltonization Algorithm**: Algorithm used for colorblindness simulation.
 
 ## Installation
 
