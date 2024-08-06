@@ -13,6 +13,12 @@ The app can simulate the following types of colorblindness:
 - **Protanopia**: Complete inability to perceive red light
 - **Tritanopia**: Complete inability to perceive blue light
 - **Monochromacy**: Complete color blindness
+  
+#### Sample Images
+<img src="https://drive.google.com/uc?id=1FI2-C4LRVONjfdwD_vY-7u-DprP5Zty3" alt="Sample 1" height="200" />
+<img src="https://drive.google.com/uc?id=1JRjnlmcAbgkcPXuE3QKHt6kXGUQju_ep" alt="Sample 2" height="200" />
+<img src="https://drive.google.com/uc?id=1qI2mwm78g9CvvIJCegwg3nSTb-mD99oc" alt="Sample 3" height="200" />
+
 
 ### Tests
 The app includes the following tests:
@@ -31,7 +37,7 @@ The app includes the following tests:
 ## Usage
 
 1. Open the app on your Android device.
-2. Select the type of colorblindness you want to simulate.
+2. Navigate to the simulate section and select the type of colorblindness you want to simulate.
 3. Navigate to the tests section to take the Ishihara test or the "Tap the Color" test.
 
 ---
