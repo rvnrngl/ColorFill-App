@@ -40,9 +40,9 @@ The app includes the following tests:
 2. Navigate to the simulate section and select the type of colorblindness you want to simulate.
 3. Navigate to the tests section to take the Ishihara test or the "Tap the Color" test.
 
----
+## Disclaimer
 
-**Note:** This app is intended for educational purposes and should not be used as a substitute for professional medical advice, diagnosis, or treatment.
+Please note that this research and simulation may not be completely accurate and should be used primarily for educational purposes. It should not be considered a substitute for professional medical advice, diagnosis, or treatment.
 
 ---
 
