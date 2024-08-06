@@ -28,6 +28,17 @@ The app includes the following tests:
 - **Ishihara Test**: A test using a series of colored dot patterns to detect colorblindness.
 - **Tap the Color**: A test where users choose the one different shade of color among four options.
 
+## Tech Stack
+
+- **Java**: Programming language used for Android app development.
+- **Android Studio**: IDE used for development.
+- **Python**: Used for backend colorblindness simulation and processing.
+  - **Chaquopy**: Python-to-Java bridge used for integrating Python code with Android.
+  - **OpenCV**: Library used for computer vision tasks.
+  - **Fillow**: Library used for color-related calculations.
+  - **NumPy**: Library used for numerical operations.
+  - **Dalonization Algorithm**: Algorithm used for colorblindness simulation.
+
 ## Installation
 
 1. Clone the repository:
